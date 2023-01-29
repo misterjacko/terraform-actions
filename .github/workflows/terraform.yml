@@ -67,6 +67,11 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
+    - name: Setup Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9' 
+        
     - name: Check Versions
       run: python --version
     - name: Configure AWS credentials from Test account

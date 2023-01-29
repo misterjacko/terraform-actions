@@ -28,7 +28,7 @@ module "lambda_function" {
   function_name = "WaybackArchiver"
   description   = "My awesome lambda function"
   handler       = "index.lambda_handler"
-  runtime       = "python3.10"
+  runtime       = "python3.9"
   source_path   = "./wayback_app"
 
 
